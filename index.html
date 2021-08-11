@@ -2,77 +2,270 @@
 <html lang="tr">
 
 <head>
+  <meta charset="utf-8" />
+  <meta name="author" content="PiyanosSoftware" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yazılım Geliştiricisi | Ferdi Özer</title>
+  <meta name="description"
+    content="Software Developer Ferdi Özer in kişisel web sitesi. O bir bir bilgisayar mühendisi.">
+  <meta property="og:title" content="Yazılım Geliştiricisi | Ferdi Özer" />
+  <meta property="og:description"
+    content="Software Developer Ferdi Özer in kişisel web sitesi. O bir bir bilgisayar mühendisi." />
+  <meta property="og:url" content="https://ferdiozer.github.io" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/logo.png" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.min.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="assets/css/nojs.css">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Yakında - Ferdi Özer ferdiozer.com</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i"
-    rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
+  <script src="assets/js/jquery.min.js"></script>
+  <style>
+    .profile-pic {
+      width: 64px;
+      height: 64px;
+      border-radius: 32px;
+    }
+  </style>
 
 </head>
 
-<body>
-
-  <div class="overlay"></div>
-
-  <div class="masthead">
-    <div class="masthead-bg"></div>
-    <div class="container h-100">
-      <div class="row h-100">
-        <div class="col-12 my-auto">
-          <div class="masthead-content text-white py-5 py-md-0">
-            <h1 class="mb-3">Yakında!</h1>
-            <p class="mb-5">
-              <strong>görüşmek üzere</strong><br>
-              info@ferdiozer.com
-            </p>
-            <div class="input-group input-group-newsletter">
-
-              <div class="input-group-append">
-
-              </div>
-            </div>
-          </div>
+<body class="">
+  <div id="particles-js"></div>
+  <section id="introduction" class="bw">
+    <div class="brand">
+      <h2 class="animated fadeInUp">Software Developer</h2>
+      <h1 class="animated fadeInUp1">Hello, I'm <span class="titlename">FERDİ</span></h1>
+      <p class="animated fadeInUp parentmytyping">
+        I've worked with <span class="element mytyping"></span>
+      </p>
+    </div>
+    <div class="chevron animated fadeInUp">
+      <i class="flaticon-bottom4 down"></i>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container">
+      <div class="col-md-12 center">
+        <img class="profile-pic"
+          src="https://images.unsplash.com/photo-1620415399934-2a719e559d84?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+        <h2>Hi there!</h2>
+        <div class="dash animated fadeIn"></div>
+        <div class="concealed visible animated fadeInUp">
+          <p>My name is Ferdi.
+            <a><i class="fa fa-volume-up" onclick="playaudio()" aria-hidden="true"></i></a> <br>Or
+            more formally Ferdi Özer. I live in Istanbul Turkey
+          </p>
+          <p class="padded">
+            I'm a Computer Engineer. I graduated December 2018 from
+            <a href="http://www.nku.edu.tr/" target="_blank"> Tekirdag Namik Kemal University.</a>
+            I am currently developing a full stack application and I enjoy writing node js.
+          </p>
         </div>
+  </section>
+  <script>
+
+    var my_skills = ["Javascript", "NodeJS", "TypeScript", "PHP", "SQL", "MYSQL", "Mongo DB", "Redis", "Python", "ExpressJS", "React Js", "Java", "React Native", "C/C++", "AWS", "Microsoft Azure", "Heroku", "Mqtt", "Websocket", "Nginx", "Git"];
+    $(function () {
+      $(".element").typed({
+        strings: my_skills,
+        typeSpeed: 0,
+        // time before typing starts
+        startDelay: 2,
+        // backspacing speed
+        backSpeed: 0,
+        // time before backspacing
+        backDelay: 1500,
+        // loop
+        loop: true,
+        // false = infinite
+        loopCount: false,
+        // show cursor
+        showCursor: true,
+        // character for cursor
+        cursorChar: "|",
+
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    function playaudio() {
+      var snd = new Audio("assets/name.mp3");
+      snd.currentTime = 0;
+      snd.play();
+    }
+  </script>
+  <script src="assets/js/particles.js"></script>
+  <script type="text/javascript">
+    /* ---- particles.js config ---- */
+
+    /* ---- particles.js config ---- */
+    s = 3;
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 700
+          }
+        },
+        "color": {
+          "value": "#c23616"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 4,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 200,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 1,
+          "direction": "top",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "window",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 200,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 3,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+
+
+
+  </script>
+  <section id="footer">
+    <div class="container">
+      <h3>Stalk me!</h3>
+      <ul>
+        <li class="email">
+          <a href="mailto:hi@ferdiozer.com">
+            <i class="fa fa-envelope"></i>
+            <p>
+              Mail
+            </p>
+          </a>
+        </li>
+        <li class="linkedin">
+          <a href="https://in.linkedin.com/in/ferdiozer">
+            <i class="fa fa-linkedin"></i>
+            <p>Linkedin</p>
+          </a>
+        </li>
+        <li class="github">
+          <a href="https://github.com/ferdiozer">
+            <i class="fa fa-github"></i>
+            <p>GitHub</p>
+          </a>
+        </li>
+        <li class="twitter">
+          <a href="https://www.instagram.com/ferdi.ozer">
+            <i class="fa fa-instagram"></i>
+            <p>Instagram</p>
+          </a>
+        </li>
+        <li class="facebook">
+          <a href="https://www.facebook.com/ferdi.ozer04">
+            <i class="fa fa-facebook"></i>
+            <p>Facebook</p>
+          </a>
+        </li>
+      </ul>
+      <div class="license">
+        © 1993-
+        <script>document.write(new Date().getFullYear())</script> Ferdi Özer.
+        <br />
+        Made with HTML,CSS, Bootstrap, Font Awesome and lots of &hearts;
       </div>
     </div>
-  </div>
-
-  <div class="social-icons">
-    <ul class="list-unstyled text-center mb-0">
-      <li class="list-unstyled-item">
-        <a href="https://twitter.com/ferdi_04">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      <li class="list-unstyled-item">
-        <a href="https://www.facebook.com/ferdi.ozer04">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-      </li>
-      <li class="list-unstyled-item">
-        <a href="https://www.instagram.com/ferdi.ozer/">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
+  </section>
 
 
-
+  <script src="assets/js/viewportchecker.js"></script>
+  <script src="assets/js/typed.min.js"></script>
+  <script src="assets/js/pushy.min.js"></script>
+  <script src="assets/js/modernizr.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
